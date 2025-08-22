@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hatim Açılıyor...</title>
+  <script>
+    // Uygulamanın deep linki
+    const params = new URLSearchParams(window.location.search);
+    const hatimId = params.get("id");
+
+    // Örneğin: hatimtakip://hatimdetail/123
+    const deepLink = `hatimtakip://hatimdetail/${hatimId}`;
+
+    // Uygulamayı açmayı dene
+    window.location.href = deepLink;
+
+    // Eğer uygulama yoksa 2 saniye içinde fallback olarak webde göster
+    setTimeout(() => {
+      window.location.href = "https://yetisen.github.io/fallback.html";
+    }, 2000);
+  </script>
+</head>
+<body>
+  <h2>Hatim sayfası açılıyor...</h2>
+  <p>Eğer uygulama açılmazsa <a href="https://yetisen.github.io/fallback.html">buraya tıkla</a>.</p>
+</body>
+</html>
