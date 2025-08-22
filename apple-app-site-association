@@ -2,8 +2,8 @@
   {
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
-      "namespace": "android_app",
-      "package_name": "com.companyname.hatimtakip",
+      "namespace": "Hatme",
+      "package_name": "com.syd.Hatme",
       "sha256_cert_fingerprints": [
         "12:34:56:78:AB:CD:EF:..." 
       ]
