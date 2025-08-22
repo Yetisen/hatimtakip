@@ -11,8 +11,8 @@
     // Örneğin: hatimtakip://hatimdetail/123
     const deepLink = `hatimtakip://hatimdetail/${hatimId}`;
 
-    // Uygulamayı açmayı dene
-    window.location.href = deepLink;
+ // Uygulamayı aç
+    window.location.replace(deepLink);
 
     // Eğer uygulama yoksa 2 saniye içinde fallback olarak webde göster
     setTimeout(() => {
